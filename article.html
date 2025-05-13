@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voz Nawa</title>
+    <style>
+        :root {
+            --text-color: #37352f;
+            --background-color: #ffffff;
+            --light-gray: #e9e9e7;
+            --border-color: #e1e1e0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 16px;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #787774;
+            margin-bottom: 12px;
+        }
+
+        .article-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 18px 0;
+            letter-spacing: -0.01em;
+        }
+
+        .article-content {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-top: 32px;
+        }
+
+        .article-content p {
+            margin-bottom: 24px;
+        }
+
+        .navbar {
+            border-bottom: 1px solid var(--border-color);
+            padding: 14px 0;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #787774;
+            font-size: 14px;
+        }
+
+        .nav-link:hover {
+            color: var(--text-color);
+        }
+
+        /* Galería interactiva */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item .native-name {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item.clicked img {
+            opacity: 0;
+        }
+
+        .gallery-item.clicked .native-name {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="http://www.kahler-jus.de" class="nav-logo">Voz Nawa</a>
+            <div class="nav-links">
+                <a href="http://www.kahler-jus.de" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Lenguas</a>
+                <a href="#" class="nav-link">Mapa</a>
+                <a href="#" class="nav-link">Historias</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="meta">Publicado el 28 de abril de 2025 en <a href="#">Lenguas</a></div>
+
+        <h1 class="article-title">Tesoros amazónicos en el español</h1>
+
+        <div class="article-content">
+            <p>El español que hablamos hoy no fue modelado únicamente por la influencia de otras lenguas europeas como
+                el francés, el italiano o el portugués. Más allá de ese linaje compartido, también se nutrió de los
+                intercambios con los pueblos originarios del continente americano. Fue, en muchos sentidos, el resultado
+                de siglos de contacto y adaptación entre culturas profundamente diferentes. Y en ese proceso, la
+                Amazonía tuvo mucho que decir.</p>
+
+            <p>Cuando los colonizadores llegaron a esta región, se toparon con una realidad completamente nueva para
+                ellos: animales, plantas, costumbres y formas de vida que no tenían nombre en su lengua. Las lenguas
+                originarias, como el tupí, el guaraní o el arawak continental, ofrecieron las palabras necesarias para
+                nombrar ese mundo desconocido. Muchas de esas voces se incorporaron al español a través del contacto
+                directo, sobre todo en los primeros siglos, cuando los misioneros jesuitas convivían con las comunidades
+                indígenas.</p>
+
+            <p>Palabras como jaguar, maracuyá o piraña forman parte de nuestra vida cotidiana y, sin embargo, llevan en
+                sí siglos de historia y una geografía densa de selva, humedad y resistencia. Algunas se volvieron
+                internacionales, otras se mantuvieron más ligadas a lo regional, como yacaré o ananá, pero todas tienen
+                en común el haber cruzado fronteras sin perder su raíz.</p>
+
+            <p>La alimentación también absorbió términos que llegaron desde la Amazonía. La mandioca, con su versión más
+                delicada llamada tapioca, o el guaraná, que hoy aparece en latas de gaseosa pero tiene un origen
+                ancestral, son buenos ejemplos de cómo la lengua y la cultura viajan juntas. Incluso palabras que se
+                usan en contextos más académicos, como yagé o caucho, nos recuerdan que el español se sigue alimentando
+                de esas voces que alguna vez fueron escuchadas por primera vez en medio de la selva.</p>
+
+            <p>Muchas de estas lenguas hoy están en peligro, desplazadas por el avance del español, del portugués o por
+                modelos educativos que no valoran lo originario. Sin embargo, sus palabras sobreviven. Están en el
+                supermercado, en las etiquetas de productos, en las recetas, en canciones. Y cada vez que las usamos,
+                aunque no siempre lo sepamos, también estamos recordando una historia de intercambio, de tensión, de
+                adaptación y de herencia.</p>
+
+            <div class="gallery">
+                <div class="gallery-item" onclick="toggleName(this)">
+                    <img src="capibara.png" alt="Capibara" style="max-width: 200px; max-height: 200px">
+                    <div class="native-name">Kapi’ygua</div>
+                </div>
+                <div class="gallery-item" onclick="toggleName(this)">
+                    <img src="piranha.png" alt="Piraña" style="max-width: 200px; max-height: 200px">
+                    <div class="native-name">Pira añá</div>
+                </div>
+                <div class="gallery-item" onclick="toggleName(this)">
+                    <img src="maracuya.png" alt="Maracuyá" style="max-width: 200px; max-height: 200px">
+                    <div class="native-name">Mburukuja</div>
+                </div>
+                <div class="gallery-item" onclick="toggleName(this)">
+                    <img src="tucan.png" alt="Tucán" style="max-width: 200px; max-height: 200px">
+                    <div class="native-name">Tukana</div>
+                </div>
+            </div>
+
+            <h2>Referencias</h2>
+            <p>Ministerio de Cultura de la Nación Argentina. (2020, 17 de febrero). Palabras provenientes de lenguas
+                originarias presentes en el español. Recuperado de <a
+                    href="https://www.cultura.gob.ar/palabras-indigenas-presentes-en-el-espanol-8766/">cultura.gob.ar</a>
+            </p>
+            <p>Billiken. (s.f.). ¿Qué palabras en español vienen del guaraní? Recuperado de <a
+                    href="https://billiken.lat/saber-mas/que-palabras-en-espanol-vienen-del-guarani/">billiken.lat</a>
+            </p>
+        </div>
+    </main>
+
+    <script>
+        function toggleName(item) {
+            item.classList.toggle('clicked');
+        }
+    </script>
+</body>
+
+</html>
